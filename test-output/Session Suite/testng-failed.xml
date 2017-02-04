@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Session Suite]" parallel="tests">
+  <test name="Login Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.hybrid.sessionsuite.MyOrdersTest">
+        <methods>
+          <include name="quit"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.hybrid.sessionsuite.MyOrdersTest -->
+      <class name="com.hybrid.sessionsuite.LoginTest">
+        <methods>
+          <include name="loginTest" invocation-numbers="1"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.hybrid.sessionsuite.LoginTest -->
+    </classes>
+  </test> <!-- Login Test(failed) -->
+  <test name="MyOrders Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.hybrid.sessionsuite.MyOrdersTest">
+        <methods>
+          <include name="myOrdersTest" invocation-numbers="1"/>
+          <include name="quit"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.hybrid.sessionsuite.MyOrdersTest -->
+      <class name="com.hybrid.sessionsuite.LoginTest">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.hybrid.sessionsuite.LoginTest -->
+    </classes>
+  </test> <!-- MyOrders Test(failed) -->
+</suite> <!-- Failed suite [Session Suite] -->

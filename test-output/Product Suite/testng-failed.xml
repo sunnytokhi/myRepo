@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Product Suite]" parallel="tests">
+  <test name="Filter Mobile Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.hybrid.product.FilterMobileTest">
+        <methods>
+          <include name="filterMobileTest" invocation-numbers="1"/>
+          <include name="quit"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.hybrid.product.FilterMobileTest -->
+    </classes>
+  </test> <!-- Filter Mobile Test(failed) -->
+</suite> <!-- Failed suite [Product Suite] -->

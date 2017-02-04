@@ -1,0 +1,24 @@
+Hub setup->
+java -Dwebdriver.chrome.driver=F:\chromedriver.exe -jar jars/selenium-server-standalone-2.52.0.jar -role hub -hubConfig hub.json
+
+Node 1 setup->
+java -Dwebdriver.chrome.driver=F:\chromedriver.exe -jar jars/selenium-server-standalone-2.52.0.jar -role rc -nodeConfig node1.json
+
+Node 2 setup->
+java -Dwebdriver.chrome.driver=F:\chromedriver.exe -jar jars/selenium-server-standalone-2.52.0.jar -role rc -nodeConfig node2.json
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Hub setup->
+java -Dwebdriver.chrome.driver=F:\chromedriver.exe -jar jars/selenium-server-standalone-3.0.1.jar -role hub -hubConfig hub.json
+
+
+Node 1 setup->
+java -Dwebdriver.chrome.driver=F:\chromedriver.exe -jar jars/selenium-server-standalone-3.0.1.jar -role node -hub -nodeConfig node1.json
+java -Dwebdriver.chrome.driver=F:\chromedriver.exe -jar jars/selenium-server-standalone-2.52.0.jar -role rc -nodeConfig node1.json
+
+Node 2 setup->
+java -Dwebdriver.chrome.driver=F:\chromedriver.exe -jar jars/selenium-server-standalone-3.0.1.jar -role rc -nodeConfig node2.json
+java -Dwebdriver.chrome.driver=F:\chromedriver.exe -jar jars/selenium-server-standalone-2.52.0.jar -role rc -nodeConfig node2.json
+
+
